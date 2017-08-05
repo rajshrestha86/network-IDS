@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog</class>
+ <widget class="QDialog" name="Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>425</width>
+    <height>300</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <widget class="QTabWidget" name="tabWidget">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>110</y>
+     <width>401</width>
+     <height>171</height>
+    </rect>
+   </property>
+   <property name="currentIndex">
+    <number>2</number>
+   </property>
+   <widget class="QWidget" name="tab">
+    <attribute name="title">
+     <string>Train Set</string>
+    </attribute>
+    <widget class="QPushButton" name="trainBrwse">
+     <property name="geometry">
+      <rect>
+       <x>290</x>
+       <y>70</y>
+       <width>99</width>
+       <height>27</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Browse</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="trainingLine">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>40</y>
+       <width>381</width>
+       <height>27</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>20</y>
+       <width>351</width>
+       <height>17</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Please Select a Training Set</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="TestFile">
+    <attribute name="title">
+     <string>Test Set</string>
+    </attribute>
+    <widget class="QPushButton" name="testBrowse">
+     <property name="geometry">
+      <rect>
+       <x>290</x>
+       <y>70</y>
+       <width>99</width>
+       <height>27</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Browse</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_2">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>20</y>
+       <width>351</width>
+       <height>17</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Please Select a Testing Set</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="testingLine">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>40</y>
+       <width>381</width>
+       <height>27</height>
+      </rect>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="tab_2">
+    <attribute name="title">
+     <string>Standard Test Set</string>
+    </attribute>
+    <widget class="QPushButton" name="testBrowse_2">
+     <property name="geometry">
+      <rect>
+       <x>290</x>
+       <y>70</y>
+       <width>99</width>
+       <height>27</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Browse</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_3">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>20</y>
+       <width>351</width>
+       <height>17</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Please Select Standard Labelled Test Set</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="testingLine_2">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>40</y>
+       <width>381</width>
+       <height>27</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="okButton">
+     <property name="geometry">
+      <rect>
+       <x>290</x>
+       <y>100</y>
+       <width>99</width>
+       <height>27</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>OK</string>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QLabel" name="label_4">
+   <property name="geometry">
+    <rect>
+     <x>320</x>
+     <y>20</y>
+     <width>91</width>
+     <height>91</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap resource="../../../Desktop/assets/res.qrc">:/ui_start/png/filebrowse.png</pixmap>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_5">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>40</y>
+     <width>301</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>14</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+     <underline>false</underline>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border: 1px inset;
+</string>
+   </property>
+   <property name="text">
+    <string>Please Select Following Files</string>
+   </property>
+  </widget>
+ </widget>
+ <resources>
+  <include location="../../../Desktop/assets/res.qrc"/>
+ </resources>
+ <connections/>
+</ui>

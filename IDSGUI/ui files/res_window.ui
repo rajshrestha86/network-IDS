@@ -1,0 +1,565 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1176</width>
+    <height>768</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QWidget" name="layoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>420</y>
+      <width>1311</width>
+      <height>291</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout_3">
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout_2">
+       <item>
+        <layout class="QVBoxLayout" name="std_piechart"/>
+       </item>
+       <item>
+        <widget class="QTextEdit" name="stdSummary">
+         <property name="enabled">
+          <bool>false</bool>
+         </property>
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Fixed" vsizetype="Expanding">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>180</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: rgba(1,1,1,0.5);
+color: rgb(0, 0, 0);</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout">
+       <item>
+        <layout class="QVBoxLayout" name="res_piechart"/>
+       </item>
+       <item>
+        <widget class="QTextEdit" name="resSummary">
+         <property name="enabled">
+          <bool>false</bool>
+         </property>
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Fixed" vsizetype="Expanding">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>180</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: rgba(1,1,1,0.5);
+color: rgb(0, 0, 0);</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QTabWidget" name="tabWidget">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>1300</width>
+      <height>381</height>
+     </rect>
+    </property>
+    <property name="currentIndex">
+     <number>0</number>
+    </property>
+    <widget class="QWidget" name="tab">
+     <attribute name="title">
+      <string>Analysis of Result</string>
+     </attribute>
+     <widget class="QGroupBox" name="groupBox">
+      <property name="geometry">
+       <rect>
+        <x>950</x>
+        <y>10</y>
+        <width>321</width>
+        <height>271</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QGroupBox
+{
+border: 1px solid gray;
+}</string>
+      </property>
+      <property name="title">
+       <string/>
+      </property>
+      <widget class="QLabel" name="label_3">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>110</y>
+         <width>291</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: 1px solid grey;</string>
+       </property>
+       <property name="text">
+        <string>Save Report To DIsk</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_5">
+       <property name="geometry">
+        <rect>
+         <x>110</x>
+         <y>10</y>
+         <width>101</width>
+         <height>91</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="pixmap">
+        <pixmap resource="../assets/res.qrc">:/ui_start/png/save-download-icon-10.png</pixmap>
+       </property>
+       <property name="scaledContents">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QWidget" name="layoutWidget">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>140</y>
+         <width>301</width>
+         <height>111</height>
+        </rect>
+       </property>
+       <layout class="QVBoxLayout" name="verticalLayout">
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_4">
+          <item>
+           <widget class="QLabel" name="label_4">
+            <property name="text">
+             <string>Filename</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="browser"/>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_5">
+          <item>
+           <spacer name="horizontalSpacer">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item>
+           <widget class="QPushButton" name="browseBut">
+            <property name="text">
+             <string>Browse</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="saveBut">
+            <property name="text">
+             <string>Save</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_6">
+          <item>
+           <spacer name="horizontalSpacer_2">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item>
+           <widget class="QPushButton" name="savePie">
+            <property name="text">
+             <string>Save PieChart Figure</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+     <widget class="QTextEdit" name="textEdit">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>10</y>
+        <width>451</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Ubuntu</family>
+        <pointsize>14</pointsize>
+        <weight>7</weight>
+        <italic>false</italic>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgba(1,1,1,0.5);
+color: rgb(0, 0, 0);
+border: 0 px;
+font: 63 14pt &quot;Ubuntu&quot;;</string>
+      </property>
+      <property name="html">
+       <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Ubuntu'; font-size:14pt; font-weight:56; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:11pt; font-weight:400;&quot;&gt;The predictions for the data set are displayed below:&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+     </widget>
+     <widget class="QTextEdit" name="res_summary">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>60</y>
+        <width>451</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgba(1,1,1,0.5);
+color: rgb(0, 0, 0);</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="test_again">
+      <property name="geometry">
+       <rect>
+        <x>1160</x>
+        <y>290</y>
+        <width>111</width>
+        <height>27</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Test Again</string>
+      </property>
+     </widget>
+     <widget class="QWidget" name="layoutWidget">
+      <property name="geometry">
+       <rect>
+        <x>11</x>
+        <y>119</y>
+        <width>241</width>
+        <height>232</height>
+       </rect>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_3">
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_15">
+         <item>
+          <widget class="QLabel" name="tot">
+           <property name="font">
+            <font>
+             <weight>75</weight>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="text">
+            <string>Total Dataset:</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="tot_val">
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QVBoxLayout" name="verticalLayout_2">
+         <item>
+          <widget class="Line" name="line">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout_7">
+           <item>
+            <widget class="QLabel" name="label_6">
+             <property name="text">
+              <string>Normal :</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="normal_res">
+             <property name="text">
+              <string/>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout_8">
+           <item>
+            <widget class="QLabel" name="label_7">
+             <property name="text">
+              <string>Neptune:</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="nep_res">
+             <property name="text">
+              <string/>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout_9">
+           <item>
+            <widget class="QLabel" name="label_8">
+             <property name="text">
+              <string>Smurf:</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="smurf_res">
+             <property name="text">
+              <string/>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout_10">
+           <item>
+            <widget class="QLabel" name="label_9">
+             <property name="text">
+              <string>Back:</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="back_res">
+             <property name="text">
+              <string/>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout_11">
+           <item>
+            <widget class="QLabel" name="label_11">
+             <property name="text">
+              <string>Teardrop:</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="tear_res">
+             <property name="text">
+              <string/>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout_12">
+           <item>
+            <widget class="QLabel" name="label_10">
+             <property name="text">
+              <string>Pod:</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="pod_res">
+             <property name="text">
+              <string/>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout_13">
+           <item>
+            <widget class="QLabel" name="label_13">
+             <property name="text">
+              <string>Land:</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="land_res">
+             <property name="text">
+              <string/>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout_14">
+           <item>
+            <widget class="QLabel" name="label_15">
+             <property name="text">
+              <string>Anomaly:</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="anomaly_res">
+             <property name="text">
+              <string/>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="verticalLayoutWidget">
+      <property name="geometry">
+       <rect>
+        <x>490</x>
+        <y>10</y>
+        <width>451</width>
+        <height>321</height>
+       </rect>
+      </property>
+      <layout class="QVBoxLayout" name="bar"/>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>401</y>
+      <width>191</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+      <underline>true</underline>
+     </font>
+    </property>
+    <property name="text">
+     <string>True Value:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>670</x>
+      <y>400</y>
+      <width>191</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Detected Value:</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1176</width>
+     <height>25</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources>
+  <include location="../assets/res.qrc"/>
+ </resources>
+ <connections/>
+</ui>

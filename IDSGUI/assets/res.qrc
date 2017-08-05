@@ -1,0 +1,12 @@
+<RCC>
+  <qresource prefix="ui_start">
+    <file>png/Pictogram_voting_wait.png</file>
+    <file>gif/loading-gears-animation-10.gif</file>
+    <file>png/tcp_capture-300x300.png</file>
+    <file>png/vulnerability-scanning.png</file>
+    <file>png/nids.png</file>
+    <file>png/54121-200.png</file>
+    <file>png/save-download-icon-10.png</file>
+    <file>png/filebrowse.png</file>
+  </qresource>
+</RCC>

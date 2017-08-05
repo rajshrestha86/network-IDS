@@ -1,0 +1,19 @@
+
+Statistics for Standard Value: 
+Normal	: 62.40 %
+Neptune	: 30.10 %
+Smurf	: 4.70 %
+Back	: 2.20 %
+Teardrop	: 0.00 %
+POD	: 0.60 %
+Land	: 0.00 %
+Anomalies	: 0.00 %
+__________________________________________________________________
+The statistics for result data: Normal	: 62.40 %
+Neptune	: 30.10 %
+Smurf	: 4.70 %
+Back	: 2.20 %
+Teardrop	: 0.00 %
+POD	: 0.60 %
+Land	: 0.00 %
+Anomalies	: 0.00 %
